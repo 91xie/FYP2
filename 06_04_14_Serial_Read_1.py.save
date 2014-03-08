@@ -1,0 +1,15 @@
+#some python code
+
+import serial
+
+ser_xb = serial.Serial("/dev/ttyUSB0",115200) #XBmodule
+
+afile = open('workfile.txt','r+')
+
+print "start"
+line = ""
+while True:
+    achar = ser_xb.read()
+    
+    afile.write(aline)
+
