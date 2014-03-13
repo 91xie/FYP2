@@ -1,6 +1,6 @@
 #patrick
 import serial
-import time
+from datetime import datetime, date, time, timedelta
 
 def strip_xb_header(astr):
     n = -1
@@ -30,15 +30,15 @@ def strip_xb_header2(astr):
 ser_xb = serial.Serial("/dev/ttyUSB0",115200)
 ser_xb.flush()
 
-#afile = open('workfile.txt','r+')
+
 line = ""
 print "start"
 while True:
     achar = ser_xb.read()
-    if achar in ("\n" + chr(13)):
+    if achar == "\n":
+        print "print"
         #line = strip_xb_header(line)
-        print line
+        print str(datetime.now()) +":"+line
         line = ""
-        
     else:
         line = line + achar
