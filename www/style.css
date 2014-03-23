@@ -1,0 +1,29 @@
+h1
+{
+        font-size:14
+        font-family:"Lucida Bright", Georgia, serif;
+        text-align:center;
+}
+
+h2
+{
+font-size:12
+font-family:"Helvetica",Arial;
+
+}
+
+p
+{
+        font-family:"Lucida Bright", Georgia, serif;
+}
+
+img{
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+
+ul
+{
+        font-family:"Lucida Bright", Georgia, serif;
+}

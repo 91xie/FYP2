@@ -1,0 +1,4 @@
+this is the plan, the plan is good, listen to the plan
+
+print a list of values using php and mysql
+from there, make it work with jpgraph
